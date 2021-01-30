@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+<body>
+    
+    
+
+<div class="navbar">
+  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a> 
+  <a href="category.html"><i class="fa fa-fw fa-angle-down"></i> category</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+
+</div>
+<img src="shp.PNG" alt="shp" width="650" height="450">
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 750px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 15px 19px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  </style>
+  </head>
+  <body>
+  
+  
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('women')"> Women</button>
+  <button class="btn" onclick="filterSelection('men')"> Men</button>
+  <button class="btn" onclick="filterSelection('kids')"> Kids</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column women">
+    <div class="content">
+      <img src="women4.jpg" alt="women" style="width:65%">
+      <h4>halfsaree</h4>
+      <p>20-30 % off</p>
+    </div>
+  </div>
+  <div class="column women">
+    <div class="content">
+    <img src="women5.jpg" alt="women" style="width:65%">
+      <h4>lehenga</h4>
+      <p>30-40 % off</p>
+    </div>
+  </div>
+  <div class="column women">
+    <div class="content">
+    <img src="women3.jpg" alt="women" style="width:65%">
+      <h4>kurtha</h4>
+      <p>up to 50% off</p>
+    </div>
+  </div>
+  
+  <div class="column men">
+    <div class="content">
+      <img src="men1.jpg" alt="men" style="width:65%">
+      <h4>trendy</h4>
+      <p>40% off</p>
+    </div>
+  </div>
+  <div class="column men">
+    <div class="content">
+    <img src="men4.jpg" alt="men" style="width:65%">
+      <h4>official</h4>
+      <p>65% off</p>
+    </div>
+  </div>
+  <div class="column men">
+    <div class="content">
+    <img src="men3.jpg" alt="men" style="width:65%">
+      <h4>pain shirts</h4>
+      <p>upto 75 % off</p>
+    </div>
+  </div>
+
+  <div class="column kids">
+    <div class="content">
+      <img src="image4.jpg" alt="kids" style="width:65%">
+      <h4>night wear</h4>
+      <p>40% off</p>
+    </div>
+  </div>
+  <div class="column kids">
+    <div class="content">
+    <img src="image6.jpg" alt="kids" style="width:65%">
+      <h4>party wear</h4>
+      <p>min 40% off</p>
+    </div>
+  </div>
+  <div class="column kids">
+    <div class="content">
+    <img src="image3.jpg" alt="kids" style="width:65%">
+      <h4>party wear</h4>
+      <p>upto 45% off</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+</style>
+  </head>
+<body>
+  
+  
+
+  <div class="row">
+    <div class="column">
+      <img src="img1.png" alt="brand" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img2.webp" alt="brand" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img3.png" alt="brand" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img4.jpg" alt="brand" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img8.png" alt="brand" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img7.png" alt="brand" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img5.png" alt="brand" style="width:100%">
+    </div>
+  </div>
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+</script>
+
+
+</body>
+</html> 
